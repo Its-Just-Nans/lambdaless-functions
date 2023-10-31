@@ -7,9 +7,9 @@ With this new design, the client download a script and run it. Then the script a
 
 ## Example
 
-In the example I do it the hardcore way with selenium: selenium download the page, run the `<script></script>` tags and send data back with the `console.log`.
+In the example I do it the hardcore way with selenium: selenium download the page, run the `<script></script>` tags and send data back with the `console.log` or more easily the `body`.
 
-> The thing is: even if you open only the `index.html` it will [show you the result](https://github.com/Its-Just-Nans/lambdaless-functions/blob/main/index.html#L11) !
+> The thing is: even if you open only the `index.html` (as a regular web page) it will [show you the result](https://github.com/Its-Just-Nans/lambdaless-functions/blob/main/index.html#L11) !
 
 Usage
 

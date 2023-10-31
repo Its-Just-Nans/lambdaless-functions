@@ -8,7 +8,7 @@
                 return acc;
             }, {});
             console.log("DATA_LAMBDA", JSON.stringify(data));
-            document.body.innerHTML = JSON.stringify(data);
+            document.write(JSON.stringify(data));
         })
         .catch((err) => {
             console.log("ERROR_LAMBDA", err);

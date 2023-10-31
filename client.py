@@ -17,7 +17,6 @@ def do_lambda_less_call(driver, target_url, max_time=10):
     """do the trick"""
     driver.get(target_url)
     start_time = time()
-    final_data = {}
     try:
         while (time() - start_time) < max_time:
             sleep(0.5)
@@ -35,8 +34,8 @@ def do_lambda_less_call(driver, target_url, max_time=10):
                     return decoded
                 elif real_message.startswith(ERROR_LAMBDA):
                     return {}
-    except KeyboardInterrupt:
-        return final_data
+    except:
+        return {}
 
 
 if __name__ == "__main__":
